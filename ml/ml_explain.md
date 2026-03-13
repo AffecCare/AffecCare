@@ -6,10 +6,6 @@
 
 ---
 
-[TOC]
-
----
-
 ## 🏗️ 第一層：數據資產 (The Data Foundation)
 
 ### 📊 `data/hr_data.csv` 數據多維解析
