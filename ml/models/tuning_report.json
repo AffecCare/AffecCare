@@ -1,0 +1,67 @@
+{
+    "timestamp": "2026-03-13 17:21:48",
+    "best_score_roc_auc": 0.9965992647058822,
+    "best_parameters": {
+        "classifier__learning_rate": 0.05,
+        "classifier__max_depth": 3,
+        "classifier__n_estimators": 100,
+        "classifier__scale_pos_weight": 3.0
+    },
+    "top_5_configurations": [
+        {
+            "rank": 1,
+            "mean_test_score_auc": 0.9965992647058822,
+            "std_test_score_auc": 0.005451227798906529,
+            "params": {
+                "classifier__learning_rate": 0.05,
+                "classifier__max_depth": 3,
+                "classifier__n_estimators": 100,
+                "classifier__scale_pos_weight": 3.0
+            }
+        },
+        {
+            "rank": 2,
+            "mean_test_score_auc": 0.9964613970588235,
+            "std_test_score_auc": 0.0049919173966505885,
+            "params": {
+                "classifier__learning_rate": 0.05,
+                "classifier__max_depth": 4,
+                "classifier__n_estimators": 50,
+                "classifier__scale_pos_weight": 3.0
+            }
+        },
+        {
+            "rank": 2,
+            "mean_test_score_auc": 0.9964613970588235,
+            "std_test_score_auc": 0.0049919173966505885,
+            "params": {
+                "classifier__learning_rate": 0.05,
+                "classifier__max_depth": 5,
+                "classifier__n_estimators": 50,
+                "classifier__scale_pos_weight": 3.0
+            }
+        },
+        {
+            "rank": 4,
+            "mean_test_score_auc": 0.9962683823529412,
+            "std_test_score_auc": 0.006752006141711986,
+            "params": {
+                "classifier__learning_rate": 0.05,
+                "classifier__max_depth": 3,
+                "classifier__n_estimators": 200,
+                "classifier__scale_pos_weight": 3.0
+            }
+        },
+        {
+            "rank": 4,
+            "mean_test_score_auc": 0.9962683823529412,
+            "std_test_score_auc": 0.006752006141711986,
+            "params": {
+                "classifier__learning_rate": 0.05,
+                "classifier__max_depth": 5,
+                "classifier__n_estimators": 100,
+                "classifier__scale_pos_weight": 3.0
+            }
+        }
+    ]
+}
