@@ -1,6 +1,8 @@
 [submodule "backend"]
 	path = backend
 	url = https://github.com/AffecCare/backend.git
+	branch = main
 [submodule "frontend"]
 	path = frontend
 	url = https://github.com/AffecCare/frontend.git
+	branch = main
