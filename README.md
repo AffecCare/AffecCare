@@ -50,7 +50,7 @@ git clone --recursive https://github.com/AffecCare/AffecCare.git
 
 **If you have already cloned without submodules:**
 ```bash
-git submodule update --init --recursive
+git submodule foreach --recursive 'git checkout main && git pull origin main'
 ```
 
 ### 2. Setting Up the Environment
