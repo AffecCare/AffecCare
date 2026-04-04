@@ -1,5 +1,5 @@
 {
-    "timestamp": "2026-03-13 17:21:48",
+    "timestamp": "2026-04-04 09:55:56",
     "best_score_roc_auc": 0.9965992647058822,
     "best_parameters": {
         "classifier__learning_rate": 0.05,

@@ -33,7 +33,7 @@ set_config(transform_output="pandas")
 # CONFIGURATION & CONSTANTS
 # ==============================================================================
 # File Paths
-DATA_PATH = Path("data/hr_data.csv")
+DATA_PATH = Path("data/ml_data.csv")
 MODEL_PATH = Path("models/voluntary_risk.pkl")
 REPORT_PATH = Path("models/tuning_report.json")
 

@@ -1,0 +1,303 @@
+Employee Number,username,email,raw_password,Employee Name,Age,Department,Position,Employment Status,Manager Name
+1103024456,1103024456,mia.brown@company.com,31GPgqjbRL,"Brown, Mia",40.4,Admin Offices,Accountant I,Active,Brandon R. LeBlanc
+1106026572,1106026572,william.larotonda@company.com,sL2aLedP0o,"LaRotonda, William  ",41.9,Admin Offices,Accountant I,Active,Brandon R. LeBlanc
+1302053333,1302053333,tyrone.steans@company.com,XtO0CBV$uq,"Steans, Tyrone  ",39.6,Admin Offices,Accountant I,Active,Brandon R. LeBlanc
+1211050782,1211050782,estelle.howard@company.com,7ZL$vKb!wd,"Howard, Estelle",40.5,Admin Offices,Administrative Assistant,Active,Brandon R. LeBlanc
+1307059817,1307059817,nan.singh@company.com,KMs&CfF@ul,"Singh, Nan ",37.9,Admin Offices,Administrative Assistant,Active,Brandon R. LeBlanc
+711007713,711007713,leigh ann.smith@company.com,m4qbPX%eFH,"Smith, Leigh Ann",38.8,Admin Offices,Administrative Assistant,Voluntarily Terminated,Brandon R. LeBlanc
+1102024115,1102024115,brandon  r.leblanc@company.com,T390pgSo3x,"LeBlanc, Brandon  R",41.8,Admin Offices,Shared Services Manager,Active,Janet King
+1206043417,1206043417,sean.quinn@company.com,^zOQbk#j0T,"Quinn, Sean",41.4,Admin Offices,Shared Services Manager,Voluntarily Terminated,Janet King
+1307060188,1307060188,bonalyn.boutwell@company.com,sESLN2eMH3,"Boutwell, Bonalyn",39.0,Admin Offices,Sr. Accountant,Active,Brandon R. LeBlanc
+1201031308,1201031308,amy.foster-baker@company.com,x5jB!nhF1N,"Foster-Baker, Amy",47.0,Admin Offices,Sr. Accountant,Active,Board of Directors
+1001495124,1001495124,janet.king@company.com,F^QdHxZeHG,"King, Janet",71.5,Executive Office,President & CEO,Active,Board of Directors
+1112030816,1112030816,jennifer.zamora@company.com,e19hs8U1Mg,"Zamora, Jennifer",46.6,IT/IS,CIO,Active,Janet King
+1102024056,1102024056,renee.becker@company.com,VPaSl^GKpx,"Becker, Renee",40.0,IT/IS,Database Administrator,Terminated for Cause,Simon Roup
+905013738,905013738,taisha.goble@company.com,7!t&FHQP0Y,"Goble, Taisha",54.4,IT/IS,Database Administrator,Terminated for Cause,Simon Roup
+1410071156,1410071156,daniff.hernandez@company.com,pkuOjUFFlY,"Hernandez, Daniff",39.7,IT/IS,,Terminated for Cause,Simon Roup
+1105025718,1105025718,jayne.horton@company.com,Jbz!9ZCLAk,"Horton, Jayne",42.1,IT/IS,Database Administrator,Active,Simon Roup
+1003018246,1003018246,noelle.johnson@company.com,mrGdW5sC6t,"Johnson, Noelle ",39.4,IT/IS,Database Administrator,Active,Simon Roup
+1406068403,1406068403,thomas.murray@company.com,ZmIXsh!0lD,"Murray, Thomas",37.7,IT/IS,Database Administrator,Active,Simon Roup
+1102023965,1102023965,randall.pearson@company.com,FZVT$XhnE0,"Pearson, Randall",41.6,IT/IS,Database Administrator,Voluntarily Terminated,Simon Roup
+1108027853,1108027853,thelma.petrowsky@company.com,$13Iu1bR3g,"Petrowsky, Thelma",41.5,IT/IS,Database Administrator,Active,Simon Roup
+1407068885,1407068885,lori.roby@company.com,Hs4cdm1Rpf,"Roby, Lori ",44.5,IT/IS,Database Administrator,Active,Simon Roup
+1203032255,1203032255,ivan.rogers@company.com,dXFTdAAA6I,"Rogers, Ivan",39.6,IT/IS,Database Administrator,Active,Simon Roup
+1111030148,1111030148,jason.salter@company.com,*yCcYV5WHs,"Salter, Jason",38.3,IT/IS,Database Administrator,Voluntarily Terminated,Simon Roup
+808010278,808010278,kramer.simard@company.com,i7DmuxbHLE,"Simard, Kramer",56.2,IT/IS,Database Administrator,Active,Simon Roup
+1110029732,1110029732,julia.zhou@company.com,N5S0hwo2V6,"Zhou, Julia",47.1,IT/IS,Database Administrator,Active,Simon Roup
+1192991000,1192991000,jason.foss@company.com,6Vvdc#j&5*,"Foss, Jason",45.7,IT/IS,IT Director,Active,Jennifer Zamora
+1106026933,1106026933,simon.roup@company.com,fp$M35367Y,"Roup,Simon",53.0,IT/IS,IT Manager,Active,Jennifer Zamora
+1001175250,1001175250,ricardo.ruiz@company.com,qRNUCw5fO8,"Ruiz, Ricardo",62.2,IT/IS,IT Manager,Voluntarily Terminated,Jennifer Zamora
+1011022863,1011022863,peter.monroe@company.com,BSuEou6cTs,"Monroe, Peter",39.5,IT/IS,IT Manager,Active,Jennifer Zamora
+1101023754,1101023754,eric.dougall@company.com,kDA#PRoYA4,"Dougall, Eric",55.7,IT/IS,IT Manager,Active,Jennifer Zamora
+1301052902,1301052902,rick.clayton@company.com,vI7SeW3O!*,"Clayton, Rick",40.6,IT/IS,IT Support,Active,Eric Dougall
+1501072093,1501072093,lisa.galia@company.com,Q8HnT12ooY,"Galia, Lisa",57.7,IT/IS,IT Support,Active,Eric Dougall
+602000312,602000312,leonara.lindsay@company.com,p@E9%QlK!7,"Lindsay, Leonara ",37.5,IT/IS,IT Support,Active,Eric Dougall
+1203032263,1203032263,julia.soto@company.com,tAad%ktoxD,"Soto, Julia ",53.1,IT/IS,IT Support,Active,Eric Dougall
+1212052023,1212052023,alejandro.bacong@company.com,*#hnGhgto0,"Bacong, Alejandro ",38.2,IT/IS,Network Engineer,Active,Peter Monroe
+1102024173,1102024173,anthony.cisco@company.com,LfwZ$rEwg6,"Cisco, Anthony",36.4,IT/IS,Network Engineer,Active,Peter Monroe
+1101023540,1101023540,linda.dolan@company.com,cxyjzZIUYf,"Dolan, Linda",37.7,IT/IS,Network Engineer,Active,Peter Monroe
+1988299991,1988299991,maria.gonzalez@company.com,hhidqP8%GX,"Gonzalez, Maria",45.0,IT/IS,Network Engineer,Active,Peter Monroe
+1012023013,1012023013,carlos.merlos@company.com,I9%nIEgwGV,"Merlos, Carlos",38.8,IT/IS,Network Engineer,Active,Peter Monroe
+1001956578,1001956578,tanya.morway@company.com,J5myrWjBGL,"Morway, Tanya",47.0,IT/IS,Network Engineer,Active,Peter Monroe
+906014183,906014183,anita.shepard@company.com,hyviv&j2H3,"Shepard, Anita ",45.0,IT/IS,Network Engineer,Active,Peter Monroe
+1104025466,1104025466,neville.tredinnick@company.com,3r9hDw%jf1,"Tredinnick, Neville ",37.9,IT/IS,Network Engineer,Voluntarily Terminated,Peter Monroe
+1411071506,1411071506,jumil.turpin@company.com,Sm%SS8^xxI,"Turpin, Jumil",57.0,IT/IS,Network Engineer,Active,Peter Monroe
+1307060199,1307060199,karthikeyan.ait sidi@company.com,$DcoNvSsGR,"Ait Sidi, Karthikeyan   ",50.9,IT/IS,Sr. DBA,Terminated for Cause,Simon Roup
+1010022337,1010022337,claudia  n.carr@company.com,p@5KUCmhXq,"Carr, Claudia  N",39.8,IT/IS,Sr. DBA,Active,Simon Roup
+1412071562,1412071562,donald.favis@company.com,Hyq^I#VDBp,"Favis, Donald  ",61.7,IT/IS,Sr. DBA,Terminated for Cause,Simon Roup
+1111030266,1111030266,bianca.roehrich@company.com,6Raog%Jb8E,"Roehrich, Bianca",52.9,IT/IS,Sr. DBA,Voluntarily Terminated,Simon Roup
+1411071312,1411071312,ann.daniele@company.com,iHb%XEQich,"Daniele, Ann  ",74.2,IT/IS,Sr. Network Engineer,Active,Peter Monroe
+1108028108,1108028108,jyoti.lajiri@company.com,hkPB!9^Ex&,"Lajiri,  Jyoti",39.9,IT/IS,Sr. Network Engineer,Active,Peter Monroe
+904013591,904013591,jeremiah.semizoglou@company.com,O%QtHSYNPC,"Semizoglou, Jeremiah  ",43.1,IT/IS,Sr. Network Engineer,Active,Peter Monroe
+1308060959,1308060959,joe.south@company.com,HYK4vHIRy^,"South, Joe",60.6,IT/IS,Sr. Network Engineer,Active,Peter Monroe
+1301052347,1301052347,sarah.warfield@company.com,Mk&879pRoa,"Warfield, Sarah",47.9,IT/IS,Sr. Network Engineer,Active,Peter Monroe
+1006020066,1006020066,elisa.bramante@company.com,kiugYmizVr,"Bramante, Elisa",43.0,Production       ,Director of Operations,Active,Janet King
+1501072311,1501072311,michael.albert@company.com,^eAUtV07fX,"Albert, Michael  ",57.5,Production       ,Production Manager,Active,Janet King
+1303054580,1303054580,charles.bozzi@company.com,aJS!eaGjbi,"Bozzi, Charles",56.1,Production       ,Production Manager,Voluntarily Terminated,Janet King
+1110029990,1110029990,webster  l.butler@company.com,X&&g1fXMtt,"Butler, Webster  L",42.7,Production       ,Production Manager,Active,Janet King
+1409070147,1409070147,amy.dunn@company.com,Z#6Gcb1K6@,"Dunn, Amy  ",52.3,Production       ,Production Manager,Active,Janet King
+1307060077,1307060077,elijiah.gray@company.com,1Y#0IFNmBy,"Gray, Elijiah  ",44.7,Production       ,Production Manager,Active,Janet King
+1001944783,1001944783,jonathan.hogland@company.com,j!BrbUIOG2,"Hogland, Jonathan ",53.8,Production       ,Production Manager,Terminated for Cause,Janet King
+1403065874,1403065874,walter.immediato@company.com,GpREgHi87*,"Immediato, Walter",49.4,Production       ,Production Manager,Voluntarily Terminated,Janet King
+1103024679,1103024679,ketsia.liebig@company.com,gCpOaqMA#T,"Liebig, Ketsia",44.4,Production       ,Production Manager,Active,Janet King
+1107027351,1107027351,brannon.miller@company.com,W@9r09x6Sp,"Miller, Brannon",44.6,Production       ,Production Manager,Active,Janet King
+1402065355,1402065355,ebonee.peterson@company.com,aPMajyHVgU,"Peterson, Ebonee  ",48.9,Production       ,Production Manager,Voluntarily Terminated,Janet King
+1102024149,1102024149,kelley.spirea@company.com,B1#%oXn9vt,"Spirea, Kelley",50.5,Production       ,Production Manager,Active,Janet King
+1000974650,1000974650,david.stanley@company.com,Cgs1trK5hR,"Stanley, David ",50.3,Production       ,Production Manager,Active,Janet King
+1405067298,1405067298,kissy.sullivan@company.com,HwdfujsNiL,"Sullivan, Kissy ",48.0,Production       ,Production Manager,Active,Janet King
+1410071026,1410071026,courtney  e.wallace@company.com,Es7zq0!CPo,"Wallace, Courtney  E",70.4,Production       ,Production Manager,Voluntarily Terminated,Janet King
+1409070522,1409070522,wilson  k.adinolfi@company.com,0pa6dq3M7M,"Adinolfi, Wilson  K",42.7,Production       ,Production Technician I,Active,Michael Albert
+1011022883,1011022883,trina.alagbe@company.com,C2^k0w5PR5,"Alagbe,Trina",37.5,Production       ,Production Technician I,Active,Elijiah Gray
+1001417624,1001417624,carol.anderson@company.com,DfDdD01*qT,"Anderson, Carol ",36.6,Production       ,Production Technician I,Voluntarily Terminated,Webster Butler
+1304055947,1304055947,linda.anderson@company.com,8atmGycnaS,"Anderson, Linda  ",48.9,Production       ,Production Technician I,Active,Amy Dunn
+1301052124,1301052124,sam.athwal@company.com,5*k2dC38Ma,"Athwal, Sam",43.1,Production       ,Production Technician I,Active,Ketsia Liebig
+1212051409,1212051409,linda.bachiochi@company.com,X&IGkKzHDg,"Bachiochi, Linda",56.1,Production       ,Production Technician I,Active,Brannon Miller
+1307060083,1307060083,rachael.baczenski@company.com,*JpmOVg3@P,"Baczenski, Rachael  ",52.2,Production       ,Production Technician I,Terminated for Cause,David Stanley
+1312063507,1312063507,thomas.barbara@company.com,d@16psNQFM,"Barbara, Thomas",52.1,Production       ,Production Technician I,Voluntarily Terminated,Kissy Sullivan
+1101023679,1101023679,francesco  a.barone@company.com,tFO994^4GB,"Barone, Francesco  A",42.7,Production       ,Production Technician I,Active,Kelley Spirea
+1212051962,1212051962,nader.barton@company.com,hfFjCUQyng,"Barton, Nader",48.7,Production       ,Production Technician I,Voluntarily Terminated,Michael Albert
+1403066194,1403066194,courtney.beatrice@company.com,EU4WTx6*TZ,"Beatrice, Courtney ",55.4,Production       ,Production Technician I,Active,Elijiah Gray
+1110029777,1110029777,scott.becker@company.com,F1FhFhd1d!,"Becker, Scott",47.0,Production       ,Production Technician I,Active,Webster Butler
+1109029366,1109029366,sean.bernstein@company.com,xtbXjNJQs!,"Bernstein, Sean",55.3,Production       ,Production Technician I,Active,Amy Dunn
+1412071844,1412071844,lowan  m.biden@company.com,UkwOgFYQMO,"Biden, Lowan  M",67.3,Production       ,Production Technician I,Active,Ketsia Liebig
+1308060366,1308060366,helen.billis@company.com,EXhFfx5hs!,"Billis, Helen",36.6,Production       ,Production Technician I,Active,Brannon Miller
+1406068293,1406068293,donna.brill@company.com,SzaFi$*$F*,"Brill, Donna",35.6,Production       ,Production Technician I,Voluntarily Terminated,David Stanley
+1408069635,1408069635,josephine.bugali@company.com,!7jI5ySy8s,"Bugali, Josephine ",56.4,Production       ,Production Technician I,Active,Kissy Sullivan
+1311063114,1311063114,michael.carey@company.com,FU$anqRsvF,"Carey, Michael  ",43.2,Production       ,Production Technician I,Active,Kelley Spirea
+1208048062,1208048062,beatrice.chace@company.com,hGKeOkVC@j,"Chace, Beatrice ",75.3,Production       ,Production Technician I,Active,Michael Albert
+1305057282,1305057282,lin.chan@company.com,a#lJ53yUQ1,"Chan, Lin",47.1,Production       ,Production Technician I,Active,Elijiah Gray
+1111030129,1111030129,donovan  e.chang@company.com,B!V3uKL2p%,"Chang, Donovan  E",42.6,Production       ,Production Technician I,Active,Webster Butler
+1101023394,1101023394,enola.chivukula@company.com,h9Lhzzx8@V,"Chivukula, Enola",42.6,Production       ,Production Technician I,Voluntarily Terminated,Amy Dunn
+1012023295,1012023295,caroline.cierpiszewski@company.com,QqnY4YGX8C,"Cierpiszewski, Caroline  ",37.8,Production       ,Production Technician I,Active,Ketsia Liebig
+1407069280,1407069280,elijian.clukey@company.com,9wR%T6Rfx6,"Clukey, Elijian",45.6,Production       ,Production Technician I,Active,Brannon Miller
+1599991009,1599991009,james.cockel@company.com,Yy&LMr*Lf7,"Cockel, James",48.6,Production       ,Production Technician I,Active,David Stanley
+1001450968,1001450968,spencer.cole@company.com,oODT!gag$W,"Cole, Spencer",46.6,Production       ,Production Technician I,Terminated for Cause,Kissy Sullivan
+1403066069,1403066069,lisa.cornett@company.com,VpUyG3Idm!,"Cornett, Lisa ",49.0,Production       ,Production Technician I,Active,Kelley Spirea
+1311063172,1311063172,jean.crimmings@company.com,dRgHYaxABw,"Crimmings,   Jean",39.0,Production       ,Production Technician I,Active,Michael Albert
+1001109612,1001109612,jeneya.darson@company.com,zZuy4EGLtY,"Darson, Jene'ya ",47.4,Production       ,Production Technician I,Active,Elijiah Gray
+1306058816,1306058816,james.degweck@company.com,o8kV8$wGsu,"DeGweck,  James",48.4,Production       ,Production Technician I,Voluntarily Terminated,Webster Butler
+1501072124,1501072124,carl.desimone@company.com,7umx9NpE@8,"Desimone, Carl ",59.0,Production       ,Production Technician I,Active,Amy Dunn
+706006285,706006285,geoff.dickinson@company.com,Y0n6PTFyVp,"Dickinson, Geoff ",43.4,Production       ,Production Technician I,Active,Ketsia Liebig
+1209048696,1209048696,lily.dinocco@company.com,@#R^6!rF51,"DiNocco, Lily ",47.3,Production       ,Production Technician I,Active,Brannon Miller
+1202031618,1202031618,denisa  s.dobrin@company.com,lR#hG$*Qtq,"Dobrin, Denisa  S",39.5,Production       ,Production Technician I,Active,David Stanley
+1406067865,1406067865,marianne.eaton@company.com,NO3M3^@n3q,"Eaton, Marianne",34.6,Production       ,Production Technician I,Voluntarily Terminated,Kissy Sullivan
+1007020403,1007020403,jean.engdahl@company.com,ojKYb$7$R7,"Engdahl, Jean",51.8,Production       ,Production Technician I,Active,Kelley Spirea
+1101023612,1101023612,rex.england@company.com,ji9tb86bbu,"England, Rex",47.6,Production       ,Production Technician I,Active,Kelley Spirea
+1104025243,1104025243,miguel.estremera@company.com,lbBW9O&4%9,"Estremera, Miguel",42.6,Production       ,Production Technician I,Terminated for Cause,Michael Albert
+1107027392,1107027392,april.evensen@company.com,k^UMbGK%XO,"Evensen, April",36.9,Production       ,Production Technician I,Terminated for Cause,Elijiah Gray
+1502072511,1502072511,susan.ferguson@company.com,3VVKNv5wm4,"Ferguson, Susan",71.0,Production       ,Production Technician I,Voluntarily Terminated,Webster Butler
+1302053339,1302053339,nilson.fernandes@company.com,Yj46c6$ap2,"Fernandes, Nilson  ",36.5,Production       ,Production Technician I,Active,Amy Dunn
+803009012,803009012,violeta.ferreira@company.com,4^r2QShbZN,"Ferreira, Violeta",39.8,Production       ,Production Technician I,Active,Ketsia Liebig
+1006020020,1006020020,libby.fidelia@company.com,yzi#MsyZFJ,"Fidelia,  Libby",45.1,Production       ,Production Technician I,Active,Brannon Miller
+1309061015,1309061015,raul.garcia@company.com,UPaQMB5kag,"Garcia, Raul",40.6,Production       ,Production Technician I,Active,David Stanley
+1104025414,1104025414,hamish.garneau@company.com,I%Z&oqJrrT,"Garneau, Hamish",46.0,Production       ,Production Technician I,Active,Kissy Sullivan
+1105026041,1105026041,barbara.gaul@company.com,dXhe3^kFxm,"Gaul, Barbara",42.3,Production       ,Production Technician I,Active,Kelley Spirea
+1501072192,1501072192,mildred.gentry@company.com,HlxrDvRW99,"Gentry, Mildred",35.5,Production       ,Production Technician I,Active,Michael Albert
+1308060622,1308060622,melisa.gerke@company.com,64m9CJi$Qm,"Gerke, Melisa",55.9,Production       ,Production Technician I,Voluntarily Terminated,Elijiah Gray
+1008020960,1008020960,alex.gilles@company.com,@yX6LyGZ$y,"Gilles, Alex",51.7,Production       ,Production Technician I,Voluntarily Terminated,Webster Butler
+1204032927,1204032927,evelyn.girifalco@company.com,Dchi8ZfHXz,"Girifalco, Evelyn",45.9,Production       ,Production Technician I,Active,Amy Dunn
+1408069539,1408069539,shenice.gold@company.com,gb*2wHryJE,"Gold, Shenice  ",33.8,Production       ,Production Technician I,Active,Ketsia Liebig
+1411071212,1411071212,cayo.gonzalez@company.com,XRc21PGQ8r,"Gonzalez, Cayo",56.5,Production       ,Production Technician I,Active,Brannon Miller
+1106026579,1106026579,david.gordon@company.com,nNIVEMTG44,"Gordon, David",46.9,Production       ,Production Technician I,Active,David Stanley
+1312063675,1312063675,roxana.goyal@company.com,V072ZdF#I#,"Goyal, Roxana",51.5,Production       ,Production Technician I,Active,Kissy Sullivan
+1103024859,1103024859,paula.gross@company.com,%kHFMy*NvA,"Gross, Paula",42.9,Production       ,Production Technician I,Voluntarily Terminated,Kelley Spirea
+1405067064,1405067064,joanne.handschiegl@company.com,$UIHYNIcLb,"Handschiegl, Joanne",49.0,Production       ,Production Technician I,Active,Michael Albert
+1406068241,1406068241,ludwick.harrell@company.com,KfV9L8wR1t,"Harrell, Ludwick",43.6,Production       ,Production Technician I,Active,Elijiah Gray
+1110029602,1110029602,christie.harrington@company.com,F$2fK#2hsU,"Harrington, Christie ",73.6,Production       ,Production Technician I,Voluntarily Terminated,Webster Butler
+1404066622,1404066622,kara.harrison@company.com,wazW*8zKU2,"Harrison, Kara",51.9,Production       ,Production Technician I,Active,Amy Dunn
+1002017900,1002017900,anthony.heitzman@company.com,$aMEaR@YVV,"Heitzman, Anthony",42.2,Production       ,Production Technician I,Active,Ketsia Liebig
+1408069882,1408069882,rose.ivey@company.com,4FyZPqYbTg,"Ivey, Rose ",35.2,Production       ,Production Technician I,Active,Brannon Miller
+1201031438,1201031438,maryellen.jackson@company.com,gVi4!eJKVI,"Jackson, Maryellen",53.6,Production       ,Production Technician I,Active,David Stanley
+1503072857,1503072857,hannah.jacobi@company.com,#t6TfBnF11,"Jacobi, Hannah  ",60.0,Production       ,Production Technician I,Active,Kissy Sullivan
+1412071713,1412071713,sneha.jhaveri@company.com,eJy6RcfGs*,"Jhaveri, Sneha  ",62.0,Production       ,Production Technician I,Active,Kelley Spirea
+1105025721,1105025721,george.johnson@company.com,aQA$HkZb64,"Johnson, George",66.6,Production       ,Production Technician I,Voluntarily Terminated,Michael Albert
+1107027450,1107027450,judy.jung@company.com,KzInL%dX4A,"Jung, Judy  ",40.0,Production       ,Production Technician I,Voluntarily Terminated,Elijiah Gray
+1301052462,1301052462,kramer.keatts@company.com,lc5w18o7oJ,"Keatts, Kramer ",50.2,Production       ,Production Technician I,Active,Michael Albert
+710007401,710007401,kathleen.kinsella@company.com,H$WY%q*&$d,"Kinsella, Kathleen  ",52.3,Production       ,Production Technician I,Voluntarily Terminated,Webster Butler
+903013071,903013071,alexandra.kirill@company.com,fSYShgmkzJ,"Kirill, Alexandra  ",55.5,Production       ,Production Technician I,Voluntarily Terminated,Amy Dunn
+1304055683,1304055683,bradley  j.knapp@company.com,I22wRkMrN4,"Knapp, Bradley  J",48.4,Production       ,Production Technician I,Active,Ketsia Liebig
+1311062610,1311062610,john.kretschmer@company.com,fg3X#3#nUf,"Kretschmer, John",46.2,Production       ,Production Technician I,Active,Brannon Miller
+1304055987,1304055987,enrico.langton@company.com,!lVzX&gQ^U,"Langton, Enrico",39.3,Production       ,Production Technician I,Active,David Stanley
+1408069409,1408069409,dallas.leach@company.com,lPP5HT!IJk,"Leach, Dallas",47.2,Production       ,Production Technician I,Voluntarily Terminated,Kissy Sullivan
+1107027575,1107027575,jonathan  r.lebel@company.com,RvGL3jm8c@,"LeBel, Jonathan  R",44.5,Production       ,Production Technician I,Terminated for Cause,Kelley Spirea
+1206042315,1206042315,marilyn.linares@company.com,X7fJj!Ng4Z,"Linares, Marilyn ",45.0,Production       ,Production Technician I,Voluntarily Terminated,Michael Albert
+1101023353,1101023353,allison.lydon@company.com,ppYAC%8caI,"Lydon, Allison",50.5,Production       ,Production Technician I,Active,Elijiah Gray
+1001138521,1001138521,lindsay.lynch@company.com,fFwRiMR$56,"Lynch, Lindsay",53.1,Production       ,Production Technician I,Voluntarily Terminated,Webster Butler
+1201031032,1201031032,samuel.maclennan@company.com,pauOprz8!T,"MacLennan, Samuel",53.4,Production       ,Production Technician I,Voluntarily Terminated,Amy Dunn
+1209049259,1209049259,lauren.mahoney@company.com,FW$nABt!#@,"Mahoney, Lauren  ",39.7,Production       ,Production Technician I,Active,Ketsia Liebig
+1308060754,1308060754,debbie.mangal@company.com,whzboq9NuO,"Mangal, Debbie",51.4,Production       ,Production Technician I,Active,Brannon Miller
+1401064327,1401064327,shana.maurice@company.com,QG8J*cE99G,"Maurice, Shana",48.4,Production       ,Production Technician I,Active,David Stanley
+909015167,909015167,sandy.mckenna@company.com,PjT0csn!gz,"Mckenna, Sandy",39.2,Production       ,Production Technician I,Active,Kissy Sullivan
+1409070245,1409070245,elizabeth.meads@company.com,L4r9sup^*e,"Meads, Elizabeth",57.8,Production       ,Production Technician I,Voluntarily Terminated,Kelley Spirea
+1109029256,1109029256,jennifer.medeiros@company.com,oyKKaHUalL,"Medeiros, Jennifer",49.5,Production       ,Production Technician I,Active,Michael Albert
+1102024121,1102024121,dawn.motlagh@company.com,3E7F4ZJI6t,"Motlagh,  Dawn",41.7,Production       ,Production Technician I,Active,Elijiah Gray
+1204033041,1204033041,colombui.ndzi@company.com,l3X#894XMx,"Ndzi, Colombui",36.9,Production       ,Production Technician I,Voluntarily Terminated,Webster Butler
+1204033041,1204033041,horia.ndzi@company.com,vbaGcV0cQp,"Ndzi, Horia",43.0,Production       ,Production Technician I,Voluntarily Terminated,Amy Dunn
+1302053044,1302053044,richard.newman@company.com,cTft11jsS3,"Newman, Richard ",49.0,Production       ,Production Technician I,Active,Ketsia Liebig
+1403066020,1403066020,shari.ngodup@company.com,8Kr#pyDMCi,"Ngodup, Shari ",58.8,Production       ,Production Technician I,Active,Brannon Miller
+1203032357,1203032357,lei-ming.nguyen@company.com,IYBmffcHus,"Nguyen, Lei-Ming",41.7,Production       ,Production Technician I,Active,David Stanley
+1206044851,1206044851,lynn.ohare@company.com,^Hxd!ixN16,"O'hare, Lynn",45.5,Production       ,Production Technician I,Terminated for Cause,Kissy Sullivan
+1404066949,1404066949,adeel.osturnka@company.com,@MNeIf4uFb,"Osturnka, Adeel",49.3,Production       ,Production Technician I,Active,Kelley Spirea
+1103024335,1103024335,clinton.owad@company.com,e0sxPd@vED,"Owad, Clinton",46.4,Production       ,Production Technician I,Active,Michael Albert
+1109029531,1109029531,nina.panjwani@company.com,&XNotHyv0u,"Panjwani, Nina",46.9,Production       ,Production Technician I,Voluntarily Terminated,Elijiah Gray
+1307060058,1307060058,emil.pelech@company.com,mw59Cjm9^h,"Pelech, Emil",38.0,Production       ,Production Technician I,Voluntarily Terminated,Webster Butler
+1109029186,1109029186,shakira.perry@company.com,mWVJbprNUR,"Perry, Shakira",39.7,Production       ,Production Technician I,Voluntarily Terminated,Amy Dunn
+1307059944,1307059944,kayla.peterson@company.com,okbNLiKuYL,"Peterson, Kayla ",52.5,Production       ,Production Technician I,Active,Ketsia Liebig
+1305057440,1305057440,hong.pham@company.com,L#rDnLEXjE,"Pham, Hong",38.1,Production       ,Production Technician I,Voluntarily Terminated,Brannon Miller
+1001735072,1001735072,brad.pitt@company.com,3FemaWjkyE,"Pitt, Brad ",44.4,Production       ,Production Technician I,Active,David Stanley
+1102024274,1102024274,morissa.power@company.com,u1Oa$hYbFw,"Power, Morissa",41.5,Production       ,Production Technician I,Voluntarily Terminated,Kissy Sullivan
+1401064562,1401064562,louis.punjabhi@company.com,E$*Dq1TrFN,"Punjabhi, Louis  ",64.8,Production       ,Production Technician I,Active,Kelley Spirea
+1011022926,1011022926,janine.purinton@company.com,A!8&hSjr&^,"Purinton, Janine",55.5,Production       ,Production Technician I,Voluntarily Terminated,Kissy Sullivan
+1208048229,1208048229,quinn.rarrick@company.com,CKX3eostLD,"Rarrick, Quinn",41.3,Production       ,Production Technician I,Voluntarily Terminated,Michael Albert
+1211050793,1211050793,thomas.rhoads@company.com,qaT&aX#WhM,"Rhoads, Thomas",43.7,Production       ,Production Technician I,Voluntarily Terminated,Elijiah Gray
+1405067642,1405067642,haley.rivera@company.com,tqk3Hs7EQW,"Rivera, Haley  ",53.2,Production       ,Production Technician I,Active,Webster Butler
+1206038000,1206038000,alain.robinson@company.com,fQ9DMQhGAk,"Robinson, Alain  ",52.2,Production       ,Production Technician I,Voluntarily Terminated,Amy Dunn
+1403065625,1403065625,cherly.robinson@company.com,xAGiNd62dX,"Robinson, Cherly",41.2,Production       ,Production Technician I,Terminated for Cause,Ketsia Liebig
+1011022887,1011022887,elias.robinson@company.com,y*pj&g285F,"Robinson, Elias",41.2,Production       ,Production Technician I,Active,Brannon Miller
+710007555,710007555,ashley.rose@company.com,&ptgzESo45,"Rose, Ashley  ",51.3,Production       ,Production Technician I,Active,David Stanley
+1405067492,1405067492,bruno.rossetti@company.com,k5ndHUQZiA,"Rossetti, Bruno",39.0,Production       ,Production Technician I,Voluntarily Terminated,Kissy Sullivan
+1410070998,1410070998,melinda.saar-beckles@company.com,%GlkOfCbcG,"Saar-Beckles, Melinda",57.8,Production       ,Production Technician I,Active,Kelley Spirea
+1308060535,1308060535,nore.sadki@company.com,6&$ToPs45C,"Sadki, Nore  ",51.3,Production       ,Production Technician I,Voluntarily Terminated,Michael Albert
+1302053362,1302053362,kamrin.sander@company.com,Z!ZsJ38s%6,"Sander, Kamrin",37.7,Production       ,Production Technician I,Active,Elijiah Gray
+807010161,807010161,nori.sewkumar@company.com,YtPQanJkAh,"Sewkumar, Nori",51.1,Production       ,Production Technician I,Active,Webster Butler
+1205033102,1205033102,seffi.shields@company.com,KZjzAGTc4l,"Shields, Seffi",40.6,Production       ,Production Technician I,Active,Amy Dunn
+1501071909,1501071909,sade.smith@company.com,YsAxQB$SJI,"Smith, Sade",61.2,Production       ,Production Technician I,Active,Ketsia Liebig
+1410071137,1410071137,taylor.sparks@company.com,dcme&!JUBj,"Sparks, Taylor  ",57.7,Production       ,Production Technician I,Active,Brannon Miller
+1405067138,1405067138,kristen.squatrito@company.com,1ZunRlz6&L,"Squatrito, Kristen",53.0,Production       ,Production Technician I,Voluntarily Terminated,David Stanley
+1111030244,1111030244,barbara  m.stanford@company.com,w9WJeh0iGe,"Stanford,Barbara  M",43.6,Production       ,Production Technician I,Active,Kissy Sullivan
+1106026896,1106026896,rick.stoica@company.com,3FeB6^RG#W,"Stoica, Rick",41.1,Production       ,Production Technician I,Active,Kelley Spirea
+1201031310,1201031310,timothy.sullivan@company.com,@#F^!jsZmb,"Sullivan, Timothy",43.5,Production       ,Production Technician I,Active,Michael Albert
+1407069061,1407069061,barbara.sutwell@company.com,uUj@ujjBqL,"Sutwell, Barbara",57.6,Production       ,Production Technician I,Active,Elijiah Gray
+1405067501,1405067501,desiree.tavares@company.com,1*wx3J6xt8,"Tavares, Desiree  ",51.0,Production       ,Production Technician I,Voluntarily Terminated,Webster Butler
+1404066739,1404066739,sophia.theamstern@company.com,F73@#iEIdE,"Theamstern, Sophia",60.9,Production       ,Production Technician I,Voluntarily Terminated,Amy Dunn
+1103024504,1103024504,theresa.tinto@company.com,g1bszZKaJz,"Tinto, Theresa  ",42.7,Production       ,Production Technician I,Voluntarily Terminated,Ketsia Liebig
+1409070255,1409070255,jeanette.tippett@company.com,#Y1FF&bEwP,"Tippett, Jeanette",58.8,Production       ,Production Technician I,Active,Brannon Miller
+1012023152,1012023152,mei.trang@company.com,P!6dJ1vtVJ,"Trang, Mei",42.9,Production       ,Production Technician I,Active,David Stanley
+1203032235,1203032235,abdellah.veera@company.com,$k*HEkX$wA,"Veera, Abdellah ",39.2,Production       ,Production Technician I,Voluntarily Terminated,Kissy Sullivan
+1011022814,1011022814,colleen.volk@company.com,92r3apnV5E,"Volk, Colleen",39.8,Production       ,Production Technician I,Terminated for Cause,Kelley Spirea
+1106026474,1106026474,anna.von massenbach@company.com,B0WnkcUlN7,"Von Massenbach, Anna",41.0,Production       ,Production Technician I,Active,Michael Albert
+1101023619,1101023619,theresa.wallace@company.com,1CXyHidY&V,"Wallace, Theresa",45.7,Production       ,Production Technician I,Voluntarily Terminated,Elijiah Gray
+1307060212,1307060212,scott.whittier@company.com,KKQVHqQdfE,"Whittier, Scott",38.9,Production       ,Production Technician I,Voluntarily Terminated,Webster Butler
+1101023839,1101023839,barry.wilber@company.com,SA^lasJGNt,"Wilber, Barry",60.6,Production       ,Production Technician I,Voluntarily Terminated,Amy Dunn
+1308060671,1308060671,jacquelyn.williams@company.com,R9w!0*cjoS,"Williams, Jacquelyn  ",56.5,Production       ,Production Technician I,Voluntarily Terminated,Ketsia Liebig
+1001268402,1001268402,catherine.ybarra@company.com,nRRHHp8o&0,"Ybarra, Catherine ",43.9,Production       ,Production Technician I,Voluntarily Terminated,Brannon Miller
+1211051232,1211051232,colleen.zima@company.com,IZM5v35EzT,"Zima, Colleen",47.6,Production       ,Production Technician I,Active,David Stanley
+1005019209,1005019209,sarah.akinkuolie@company.com,13J^*4!M5N,"Akinkuolie, Sarah",37.5,Production       ,Production Technician II,Voluntarily Terminated,Kissy Sullivan
+1303054329,1303054329,kimberly.beak@company.com,DZ5Sq!LWjk,"Beak, Kimberly  ",60.0,Production       ,Production Technician II,Active,Kelley Spirea
+1403066125,1403066125,dianna.blount@company.com,V#qDnfxywh,"Blount, Dianna",35.5,Production       ,Production Technician II,Active,Michael Albert
+1008021030,1008021030,betsy.bondwell@company.com,Yq2@XrBRXs,"Bondwell, Betsy",59.2,Production       ,Production Technician II,Voluntarily Terminated,Elijiah Gray
+1101023457,1101023457,joseph.buccheri@company.com,ymXJbWNPvR,"Buccheri, Joseph  ",42.7,Production       ,Production Technician II,Active,Webster Butler
+1011022820,1011022820,joelle.burke@company.com,GyCC2#*eiL,"Burke, Joelle",46.1,Production       ,Production Technician II,Active,Amy Dunn
+1301052449,1301052449,benjamin.burkett@company.com,QGOXkAsJk@,"Burkett, Benjamin ",48.6,Production       ,Production Technician II,Active,Ketsia Liebig
+1012023226,1012023226,jennifer.cloninger@company.com,JeqgBbRw^y,"Cloninger, Jennifer",44.6,Production       ,Production Technician II,Voluntarily Terminated,Brannon Miller
+1209048697,1209048697,phil.close@company.com,Vbuo2G1Dj2,"Close, Phil",47.4,Production       ,Production Technician II,Voluntarily Terminated,David Stanley
+1201031274,1201031274,daniel.davis@company.com,LGOkGSH3Iy,"Davis, Daniel",46.6,Production       ,Production Technician II,Active,Kissy Sullivan
+1104025179,1104025179,carla.demita@company.com,U085!maeXz,"Demita, Carla",75.1,Production       ,Production Technician II,Voluntarily Terminated,Kelley Spirea
+1105025661,1105025661,angela.erilus@company.com,OQXzpFuoiK,"Erilus, Angela",36.6,Production       ,Production Technician II,Active,Michael Albert
+1108028428,1108028428,megan.faller@company.com,tTqcvPz#^r,"Faller, Megan ",47.5,Production       ,Production Technician II,Active,Elijiah Gray
+1402065085,1402065085,nicole.fancett@company.com,SOHRDcebWS,"Fancett, Nicole",38.5,Production       ,Production Technician II,Active,Webster Butler
+1109029103,1109029103,michael  j.fitzpatrick@company.com,52UrgJ8cBC,"Fitzpatrick, Michael  J",44.5,Production       ,Production Technician II,Voluntarily Terminated,Amy Dunn
+1012023204,1012023204,tanya.foreman@company.com,E3P$hb71eL,"Foreman, Tanya",42.4,Production       ,Production Technician II,Voluntarily Terminated,Ketsia Liebig
+1411071324,1411071324,juan.gonzalez@company.com,W7jQ9$B!@#,"Gonzalez, Juan",61.5,Production       ,Production Technician II,Terminated for Cause,Brannon Miller
+1001549006,1001549006,susan.good@company.com,6LAm4H!S9L,"Good, Susan",39.9,Production       ,Production Technician II,Active,David Stanley
+1108028351,1108028351,phylicia.gosciminski@company.com,*AR7kZcUng,"Gosciminski, Phylicia  ",42.3,Production       ,Production Technician II,Active,Kissy Sullivan
+1307059937,1307059937,earnest.hankard@company.com,428pXh3EOn,"Hankard, Earnest",37.6,Production       ,Production Technician II,Active,Kelley Spirea
+1011022932,1011022932,trina.hendrickson@company.com,yqyCOkEKfW,"Hendrickson, Trina",53.6,Production       ,Production Technician II,Voluntarily Terminated,Kelley Spirea
+1207046956,1207046956,adrienne  j.homberger@company.com,VrFvL4k^6v,"Homberger, Adrienne  J",42.1,Production       ,Production Technician II,Voluntarily Terminated,Michael Albert
+1106026433,1106026433,julissa.hunts@company.com,ZnU6ReDXoB,"Hunts, Julissa",42.1,Production       ,Production Technician II,Active,Elijiah Gray
+1103024924,1103024924,rosalie.hutter@company.com,1hFwyKVwfH,"Hutter, Rosalie",33.9,Production       ,Production Technician II,Active,Webster Butler
+1306058509,1306058509,ming.huynh@company.com,oRwB1$dTIg,"Huynh, Ming",49.5,Production       ,Production Technician II,Voluntarily Terminated,Amy Dunn
+1008020942,1008020942,tayana.jeannite@company.com,cJssY@69m0,"Jeannite, Tayana",39.4,Production       ,Production Technician II,Active,Ketsia Liebig
+1306057810,1306057810,yen.johnston@company.com,E^G!DF2keK,"Johnston, Yen",56.6,Production       ,Production Technician II,Active,Brannon Miller
+1010022030,1010022030,lindsey.langford@company.com,qa7ZzFnp28,"Langford, Lindsey",46.7,Production       ,Production Technician II,Voluntarily Terminated,David Stanley
+1104025486,1104025486,mohammed.latif@company.com,NDnsZPq#cq,"Latif, Mohammed",41.9,Production       ,Production Technician II,Voluntarily Terminated,Kissy Sullivan
+1405067565,1405067565,mathew.linden@company.com,IusD%&T95e,"Linden, Mathew",47.0,Production       ,Production Technician II,Active,Kelley Spirea
+1305056276,1305056276,susan.lundy@company.com,fX2iVD6^BR,"Lundy, Susan",49.3,Production       ,Production Technician II,Voluntarily Terminated,Michael Albert
+1001504432,1001504432,lisa.lunquist@company.com,Y8eLON*te6,"Lunquist, Lisa",44.0,Production       ,Production Technician II,Active,Elijiah Gray
+1110029623,1110029623,robyn.manchester@company.com,a1oEo7d5QT,"Manchester, Robyn",49.6,Production       ,Production Technician II,Active,Webster Butler
+1304055986,1304055986,karen.mancuso@company.com,OHRNbuYMxq,"Mancuso, Karen",39.3,Production       ,Production Technician II,Voluntarily Terminated,Amy Dunn
+1406067957,1406067957,brigit.mccarthy@company.com,o4AsOOC5e9,"McCarthy, Brigit",38.9,Production       ,Production Technician II,Active,Ketsia Liebig
+1205033439,1205033439,ned.miller@company.com,@bjIs6RGir,"Miller, Ned",40.8,Production       ,Production Technician II,Terminated for Cause,Brannon Miller
+1404066711,1404066711,erasumus.monkfish@company.com,HNOlHq@13k,"Monkfish, Erasumus  ",33.6,Production       ,Production Technician II,Active,David Stanley
+1001103149,1001103149,luisa.monterro@company.com,sy43JT*nAD,"Monterro, Luisa",55.9,Production       ,Production Technician II,Active,Kissy Sullivan
+1408069503,1408069503,patrick.moran@company.com,b@fQ8!f!SQ,"Moran, Patrick",49.3,Production       ,Production Technician II,Active,Kelley Spirea
+1301052436,1301052436,maliki.moumanil@company.com,cj07XU9W4s,"Moumanil, Maliki ",51.3,Production       ,Production Technician II,Active,Michael Albert
+1104025435,1104025435,kristie.nowlan@company.com,EmuzwOc#f$,"Nowlan, Kristie",40.4,Production       ,Production Technician II,Active,Elijiah Gray
+1001856521,1001856521,brooke.oliver@company.com,&vrTAttAyI,"Oliver, Brooke ",74.1,Production       ,Production Technician II,Voluntarily Terminated,Webster Butler
+1202031821,1202031821,ermine.pelletier@company.com,LMqV4br6*9,"Pelletier, Ermine",36.7,Production       ,Production Technician II,Voluntarily Terminated,Amy Dunn
+1411071406,1411071406,lauren.peters@company.com,zs4ykjPiX0,"Peters, Lauren",39.6,Production       ,Production Technician II,Voluntarily Terminated,Ketsia Liebig
+1103024843,1103024843,shana.petingill@company.com,vNO2AKeh7h,"Petingill, Shana  ",47.1,Production       ,Production Technician II,Active,Brannon Miller
+1402065340,1402065340,may.roberson@company.com,7GR0YzEnQK,"Roberson, May",44.6,Production       ,Production Technician II,Voluntarily Terminated,David Stanley
+1499902991,1499902991,peter.robertson@company.com,KyVerTfzkx,"Robertson, Peter",53.8,Production       ,Production Technician II,Voluntarily Terminated,Kissy Sullivan
+1106026462,1106026462,adil.sahoo@company.com,jMaQ@ChIoX,"Sahoo, Adil",39.9,Production       ,Production Technician II,Active,Kelley Spirea
+1012023103,1012023103,constance.sloan@company.com,k&2Dug8mp^,"Sloan, Constance",38.4,Production       ,Production Technician II,Voluntarily Terminated,Michael Albert
+1001970770,1001970770,joe.smith@company.com,oHqovVLNm6,"Smith, Joe",62.4,Production       ,Production Technician II,Active,Elijiah Gray
+1406068345,1406068345,lenora.tejeda@company.com,y11b7j6A8@,"Tejeda, Lenora ",72.9,Production       ,Production Technician II,Voluntarily Terminated,Elijiah Gray
+1011022777,1011022777,kenneth.thibaud@company.com,qMjO9kRrPR,"Thibaud, Kenneth",50.5,Production       ,Production Technician II,Voluntarily Terminated,Webster Butler
+1107027551,1107027551,cybil.trzeciak@company.com,*mtFfizQPs,"Trzeciak, Cybil",41.1,Production       ,Production Technician II,Voluntarily Terminated,Amy Dunn
+1011022818,1011022818,roger.walker@company.com,oYuTo@A!lE,"Walker, Roger",50.1,Production       ,Production Technician II,Active,Ketsia Liebig
+1405067188,1405067188,jordan.winthrop@company.com,hqR3Ec5B@P,"Winthrop, Jordan  ",67.4,Production       ,Production Technician II,Voluntarily Terminated,Brannon Miller
+1205033180,1205033180,hang  t.wolk@company.com,Hk$T$JUIY8,"Wolk, Hang  T",41.0,Production       ,Production Technician II,Active,David Stanley
+1012023010,1012023010,jason.woodson@company.com,pEh9uHMJ&o,"Woodson, Jason",40.9,Production       ,Production Technician II,Active,Kissy Sullivan
+1504073313,1504073313,edward.buck@company.com,3EqZBNZuH%,"Buck, Edward",50.7,Sales,Area Sales Manager,Active,Lynn Daneault
+1504073368,1504073368,jessica.bunbury@company.com,6&G%z54Sgo,"Bunbury, Jessica",61.8,Sales,Area Sales Manager,Voluntarily Terminated,John Smith
+1403065721,1403065721,michelle.carter@company.com,MKQB$Wgq6k,"Carter, Michelle ",62.9,Sales,Area Sales Manager,Active,John Smith
+1409070567,1409070567,latia.costa@company.com,i9vLf$NGDS,"Costa, Latia",37.4,Sales,Area Sales Manager,Active,Lynn Daneault
+1408069481,1408069481,jenna.dietrich@company.com,0b@HdjYpDX,"Dietrich, Jenna  ",38.9,Sales,Area Sales Manager,Active,John Smith
+1306059197,1306059197,alfred.digitale@company.com,ALqRsNA$@H,"Digitale, Alfred",37.6,Sales,Area Sales Manager,Active,John Smith
+1411071302,1411071302,maruk.fraval@company.com,ojo0ZBhvwf,"Fraval, Maruk ",62.6,Sales,Area Sales Manager,Active,Lynn Daneault
+1204032843,1204032843,gerry.friedman@company.com,TxPVjqVpE1,"Friedman, Gerry",57.1,Sales,Area Sales Manager,Active,John Smith
+1302053046,1302053046,whitney.gill@company.com,Z2DxYL&ORW,"Gill, Whitney  ",54.7,Sales,Area Sales Manager,Terminated for Cause,John Smith
+1203032099,1203032099,myriam.givens@company.com,6GK%@27irP,"Givens, Myriam",36.5,Sales,Area Sales Manager,Active,Lynn Daneault
+1411071481,1411071481,ricardo.gonzales@company.com,VfTLTSfTSU,"Gonzales, Ricardo",71.5,Sales,Area Sales Manager,Active,John Smith
+1001167253,1001167253,mike.guilianno@company.com,dv8MB5wlmQ,"Guilianno, Mike",57.1,Sales,Area Sales Manager,Voluntarily Terminated,John Smith
+1001084890,1001084890,jeremy.prater@company.com,vyLVh#PgK*,Jeremy Prater,51.9,Sales,Area Sales Manager,Active,Lynn Daneault
+1104025008,1104025008,bartholemew.khemmich@company.com,wb6*O4mDqx,"Khemmich, Bartholemew",46.4,Sales,Area Sales Manager,Active,Lynn Daneault
+1412071660,1412071660,giovanni.leruth@company.com,Bli*co9mBb,"Leruth, Giovanni",37.3,Sales,Area Sales Manager,Active,John Smith
+1209048771,1209048771,joseph.martins@company.com,Ih2JwjrLQ*,"Martins, Joseph",55.8,Sales,Area Sales Manager,Active,Lynn Daneault
+1209049326,1209049326,jac.mckinzie@company.com,!C7pIw5iMx,"McKinzie, Jac",41.8,Sales,Area Sales Manager,Active,Lynn Daneault
+1306057978,1306057978,howard.mullaney@company.com,dtKaMS^DCf,"Mullaney, Howard",50.4,Sales,Area Sales Manager,Active,John Smith
+1111030684,1111030684,dheepa.nguyen@company.com,g$@swABZb3,"Nguyen, Dheepa",37.0,Sales,Area Sales Manager,Active,Lynn Daneault
+1501072180,1501072180,jasmine.onque@company.com,PGAJXsVB#I,"Onque, Jasmine",35.9,Sales,Area Sales Manager,Active,Lynn Daneault
+812011761,812011761,travis.ozark@company.com,#7lVpBhu4q,"Ozark, Travis",43.9,Sales,Area Sales Manager,Active,John Smith
+1102024106,1102024106,xana.potts@company.com,2&KVqvbYze,"Potts, Xana",37.6,Sales,Area Sales Manager,Active,Lynn Daneault
+1502072711,1502072711,michael.riordan@company.com,xfWtSkm!pZ,"Riordan, Michael",58.2,Sales,Area Sales Manager,Active,Lynn Daneault
+1411071295,1411071295,caitrin.strong@company.com,45Od65bJpt,"Strong, Caitrin",36.9,Sales,Area Sales Manager,Active,John Smith
+1401064637,1401064637,sharlene.terry@company.com,PMS29u4bKd,"Terry, Sharlene ",60.9,Sales,Area Sales Manager,Active,Lynn Daneault
+1312063714,1312063714,jackie.valentin@company.com,W9jpEtonwp,"Valentin,Jackie",34.9,Sales,Area Sales Manager,Active,John Smith
+1111030503,1111030503,noah.villanueva@company.com,qJcOKZ7$4U,"Villanueva, Noah",36.7,Sales,Area Sales Manager,Active,John Smith
+1009021646,1009021646,debra.houlihan@company.com,K92s67@qzJ,"Houlihan, Debra",60.0,Sales,Director of Sales,Active,Janet King
+1402065303,1402065303,lynn.daneault@company.com,TEjTK5kQue,"Daneault, Lynn",36.0,Sales,Sales Manager,Active,Debra Houlihan
+1109029264,1109029264,donysha.kampew@company.com,VKCmkvodTP,"Kampew, Donysha    ",36.4,Sales,Sales Manager,Voluntarily Terminated,Debra Houlihan
+1499902910,1499902910,john.smith@company.com,Bn%!1yVWq!,"Smith, John",41.6,Sales,Sales Manager,Active,Debra Houlihan
+1107027358,1107027358,colby.andreola@company.com,uZDNEe^4v9,"Andreola, Colby",46.9,IT/IS,Software Engineer,Active,Alex Sweetwater
+1101023577,1101023577,judith.carabbio@company.com,CbxcQMdNrL,"Carabbio, Judith",39.0,IT/IS,Software Engineer,Active,Alex Sweetwater
+1203032498,1203032498,keyla.del bosque@company.com,uWUCv$IT67,"Del Bosque, Keyla",46.7,IT/IS,Software Engineer,Active,Alex Sweetwater
+1401064670,1401064670,susan.exantus@company.com,nW3jCXk8x0,"Exantus, Susan",38.9,IT/IS,Software Engineer,Terminated for Cause,Alex Sweetwater
+1303054625,1303054625,sandra.martin@company.com,CwkpmhR39b,"Martin, Sandra",38.4,IT/IS,Software Engineer,Active,Alex Sweetwater
+1112030979,1112030979,luke.patronick@company.com,$OUMA!RWNo,"Patronick, Luke",47.1,IT/IS,Software Engineer,Voluntarily Terminated,Alex Sweetwater
+1012023185,1012023185,adell.saada@company.com,HAAohAjkUv,"Saada, Adell",39.7,IT/IS,Software Engineer,Active,Alex Sweetwater
+1201031324,1201031324,andrew.szabo@company.com,^CtArQ11%@,"Szabo, Andrew",42.9,IT/IS,Software Engineer,Active,Alex Sweetwater
+1102024057,1102024057,edward.true@company.com,YC%otHhtrN,"True, Edward",42.8,IT/IS,Software Engineer,Voluntarily Terminated,Alex Sweetwater
+1001644719,1001644719,alex.sweetwater@company.com,CblokRqt$7,"Sweetwater, Alex",59.4,IT/IS,Software Manager,Active,Jennifer Zamora
+1901495124,1901495124,collin.suen@company.com,f7Aw$C5mNe,"Suen, Collin",51.3,Executive Office,Executive Assistant,Active,Janet King
