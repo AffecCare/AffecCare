@@ -6,3 +6,4 @@ imbalanced-learn
 joblib
 matplotlib
 seaborn
+requests
