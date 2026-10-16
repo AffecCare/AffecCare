@@ -23,7 +23,7 @@ We track lightweight interactions (Likes, Dislikes, and Clicks):
 ### 3. HR Insight Dashboard & Interventions
 The recommendation engine acts as a reverse-sensor for HR:
 - **Macro Trend Analytics**: Aggregates individual vectors into department-wide **Stress Levels** and **Primary Concerns**.
-- **Actionable Interventions**: The dashboard automatically flags high-risk cohorts and suggests concrete interventions (e.g., "Schedule 1-on-1s" or "Push Emotion Awareness content").
+- **Actionable Interventions**: The dashboard automatically flags high-stress cohorts and suggests concrete interventions (e.g., "Schedule 1-on-1s" or "Push Emotion Awareness content").
 
 ## 🚀 Technical Features
 
