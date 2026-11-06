@@ -34,15 +34,20 @@ AffecCare 後端（獨立部署於 `affeccare-api.sk5s.org`）將在 `/mcp` 端�
   5. `tools/call`: 執行具體工具，驗證角色、解析參數並調用後端 Service。
 * **GET 請求行為**:
   * `GET /mcp` 直接回傳 `405 Method Not Allowed`，告知本端點支援無狀態 Streamable HTTP POST。
+* **自動探索端點 (OAuth 2.1 & MCP Discovery)**:
+  1. `GET /.well-known/oauth-protected-resource`: RFC 9728 元資料，提供受保護端點 `/mcp` 對應之授權伺服器位址。
+  2. `GET /.well-known/oauth-authorization-server`: RFC 8414 元資料，自動宣告 `authorization_endpoint` (`/oauth/authorize`) 與 `token_endpoint` (`/oauth/token`)。
+  3. `GET /.well-known/openid-configuration`: OIDC 探索端點相容別名。
+  4. 根目錄路由別名：`/authorize` 與 `/token` 作為 `/oauth/authorize` 與 `/oauth/token` 之直接映射，杜絕 Claude / ChatGPT 預設存取根路徑時產生 404。
 
 ---
 
 ## 3. 身分驗證機制 (Authentication)
 
-* **標準 Bearer 驗證**：除 `initialize` 外，所有 `/mcp` 請求均須透過 HTTP Header `Authorization: Bearer <token>` 傳遞（`initialize` 允許未認證請求以支援協定版本與 capabilities 探索）。
+* **標準 Bearer 驗證**：除 `initialize` 外，所有 `/mcp` 請求均須透過 HTTP Header `Authorization: Bearer <token>` 傳遞。未認證時回傳 `401 Unauthorized` 並附帶 `WWW-Authenticate: Bearer resource_metadata=".../.well-known/oauth-protected-resource"` 指引 AI Client 自動啟動 OAuth 探索。
 * **雙軌認證支援**：
   1. **OAuth 2.0 端點支援**：
-     - 提供 `/api/oauth/authorize` 與 `/api/oauth/token`（支援 Authorization Code + PKCE 流程），供支援標準 OAuth 的外部 AI Agent 透過彈出視窗完成登入。
+     - 提供 `/oauth/authorize`（別名 `/authorize`）與 `/oauth/token`（別名 `/token`），支援 Authorization Code + PKCE 流程，供支援標準 OAuth 的外部 AI Agent 透過彈出視窗完成登入。
      - **Open Redirect 防護**：`redirect_uri` 實施嚴格白名單校驗，目前開放：
        - 本機開發與 MCP 客戶端：`localhost` / `127.0.0.1`（HTTP/HTTPS，任意 port）
        - 外部 AI Agent：`https://claude.ai/*`、`https://chatgpt.com/*`
