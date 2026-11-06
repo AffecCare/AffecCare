@@ -36,7 +36,7 @@ AffecCare 後端（獨立部署於 `affeccare-api.sk5s.org`）將在 `/mcp` 端�
   * `GET /mcp` 直接回傳 `405 Method Not Allowed`，告知本端點支援無狀態 Streamable HTTP POST。
 * **自動探索端點 (OAuth 2.1 & MCP Discovery)**:
   1. `GET /.well-known/oauth-protected-resource`: RFC 9728 元資料，提供受保護端點 `/mcp` 對應之授權伺服器位址。
-  2. `GET /.well-known/oauth-authorization-server`: RFC 8414 元資料，自動宣告 `authorization_endpoint` (`/oauth/authorize`) 與 `token_endpoint` (`/oauth/token`)。
+  2. `GET /.well-known/oauth-authorization-server`: RFC 8414 元資料，自動宣告 `authorization_endpoint` (`/oauth/authorize`)、`token_endpoint` (`/oauth/token`)，並宣告 `client_id_metadata_document_supported: true` 以原生相容 Claude 與 ChatGPT 的 CIMD (Client ID Metadata Document) 免手動註冊流程。
   3. `GET /.well-known/openid-configuration`: OIDC 探索端點相容別名。
   4. 根目錄路由別名：`/authorize` 與 `/token` 作為 `/oauth/authorize` 與 `/oauth/token` 之直接映射，杜絕 Claude / ChatGPT 預設存取根路徑時產生 404。
 
