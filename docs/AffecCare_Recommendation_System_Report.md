@@ -6,7 +6,9 @@
 系統採用基於內容與使用者行為的 **內容過濾與協同混合概念 (Content-based & Behavior Vector)**。
 1. **維度定義**：文章標籤被對應到 3 個核心維度 (`VECTOR_DIM=3`)：`壓力與情緒` (dim 0)、`職場與職涯` (dim 1)、`身心與生活` (dim 2)。
 2. **向量化**：每篇文章會根據其標籤被轉換為一個正規化後的 3D 向量。使用者也有一個對應的 3D 偏好向量 (`user_vector`)。
-3. **推薦計算**：當需要推薦時，系統會計算 `user_vector` 與所有文章向量的**餘弦相似度 (Cosine Similarity)**，並根據相似度分數由高至低排序，挑選分數最高的前 N 篇 (Top N) 推薦給使用者。
+3. **推薦計算**：當需要推薦時，系統會計算 `user_vector` 與所有候選文章向量的**餘弦相似度 (Cosine Similarity)** 並由高至低排序：
+   * 若推播篇數為 1 篇 ($N=1$)：推送餘弦相似度最高的 **Cosine Top-1** 文章。
+   * 若推播篇數 $N \ge 2$：包含餘弦相似度最高的前 $(N-1)$ 篇 (**Cosine Top-(N-1)**)，以及 1 篇從剩餘所有候選文章中隨機選擇的文章（探索推薦機制，避免 Filter Bubble 並增加多樣性）。
 
 ## 二、 使用者偏好與行為回饋
 
@@ -168,10 +170,13 @@ $$ Similarity(U, A_i) = \frac{U \cdot A_i}{||U|| \times ||A_i||} \approx U \cdot
 這種類似於 Exponential Moving Average (EMA) 的線上更新策略，讓使用者的偏好向量能在 3D 空間中，朝著正向回饋的文章聚落移動 (類似單步 Gradient step)。
 
 ### 6. 模型輸出 (Outputs)
-模型最終輸出為一個經過排序 (Ranked) 的結果列表，包含：
+模型最終輸出為一個推薦結果列表，包含：
 * `article_id` 與文章 Metadata (Title, Content, Tags)
 * `score`: 該文章與使用者的 Cosine Similarity 分數（介於 -1.0 到 1.0 之間）
-系統最終會對排序後的清單進行截斷 (Truncation)，回傳 Top N (如 Top 3) 文章，交由通知 API 進行電子報/推播發送。
+系統最終根據 HR 設定之篇數 $N$ 輸出：
+* 當 $N=1$：回傳 Cosine Top-1 文章。
+* 當 $N \ge 2$：回傳 Cosine Top-$(N-1)$ 文章與 1 篇從剩餘文章中隨機抽取的探索文章。
+交由通知 API 進行電子報/推播發送。
 
 ---
 **總結**：
