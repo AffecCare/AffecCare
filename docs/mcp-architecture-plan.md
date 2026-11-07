@@ -9,7 +9,7 @@
 AffecCare 後端（獨立部署於 `affeccare-api.sk5s.org`）將在 `/mcp` 端點提供符合最新 MCP 規範的遠端服務，讓企業 HR 與一般員工能夠透過各類 AI Agent（例如 Claude Desktop、Cursor、企業專屬 Agent 等）安全地操作平台功能。
 
 ### 核心原則
-1. **無狀態 Streamable HTTP (Stateless)**：採用最新的單一 `POST /mcp` 端點，每個請求直接返回 `application/json`（JSON-RPC 2.0），`GET` 回傳 `405 Method Not Allowed`。不佔用持續長連線，完美相容現有 Gunicorn 同步執行緒架構。
+1. **無狀態 Streamable HTTP (Stateless)**：採用最新的單一 `POST /mcp` 端點，每個請求直接返回 `application/json`（JSON-RPC 2.0）。`GET /mcp` 作為探測／SSE 模式回傳 `200 OK` 與伺服器狀態元資料（`Accept: text/event-stream` 時發送 SSE `endpoint` 事件），避免 AI Agent 或反向代理探測時誤判為端點失效。不佔用持續長連線（探測模式），完美相容現有 Gunicorn 同步執行緒架構。
 2. **零重複業務邏輯 (Adapter Pattern)**：MCP 層作為協定適配層，直接複用現有 `app/services/*`（CMS、推薦系統、收件匣、EAP 諮詢工單等）。
 3. **強制角色與資料邊界隔離 (Strict RBAC & ABAC)**：
    - HR 與員工具有完全隔離的工具集。
@@ -33,12 +33,12 @@ AffecCare 後端（獨立部署於 `affeccare-api.sk5s.org`）將在 `/mcp` 端�
   4. `tools/list`: 依據呼叫者 Token 角色回傳可用工具清單與 JSON Schema。
   5. `tools/call`: 執行具體工具，驗證角色、解析參數並調用後端 Service。
 * **GET 請求行為**:
-  * `GET /mcp` 直接回傳 `405 Method Not Allowed`，告知本端點支援無狀態 Streamable HTTP POST。
+  * `GET /mcp` 回傳 `200 OK` 與伺服器狀態元資料（`Accept: text/event-stream` 時以 SSE 發送 `endpoint` 事件），供探測與舊版 SSE 客戶端相容；主通道仍為無狀態 Streamable HTTP `POST /mcp`。
 * **自動探索端點 (OAuth 2.1 & MCP Discovery)**:
   1. `GET /.well-known/oauth-protected-resource`: RFC 9728 元資料，提供受保護端點 `/mcp` 對應之授權伺服器位址。
-  2. `GET /.well-known/oauth-authorization-server`: RFC 8414 元資料，自動宣告 `authorization_endpoint` (`/oauth/authorize`)、`token_endpoint` (`/oauth/token`)，並宣告 `client_id_metadata_document_supported: true` 以原生相容 Claude 與 ChatGPT 的 CIMD (Client ID Metadata Document) 免手動註冊流程。
+  2. `GET /.well-known/oauth-authorization-server`: RFC 8414 元資料，自動宣告 `authorization_endpoint` (`/oauth/authorize`)、`token_endpoint` (`/oauth/token`)、`registration_endpoint` (`/oauth/register`)，並宣告 `client_id_metadata_document_supported: true` 以原生相容 Claude 與 ChatGPT 的 CIMD (Client ID Metadata Document) 免手動註冊流程。
   3. `GET /.well-known/openid-configuration`: OIDC 探索端點相容別名。
-  4. 根目錄路由別名：`/authorize` 與 `/token` 作為 `/oauth/authorize` 與 `/oauth/token` 之直接映射，杜絕 Claude / ChatGPT 預設存取根路徑時產生 404。
+  4. 根目錄路由別名：`/authorize`、`/token`、`/register` 作為 `/oauth/authorize`、`/oauth/token`、`/oauth/register` 之直接映射，杜絕 Claude / ChatGPT 預設存取根路徑時產生 404。
 
 ---
 
@@ -47,10 +47,10 @@ AffecCare 後端（獨立部署於 `affeccare-api.sk5s.org`）將在 `/mcp` 端�
 * **標準 Bearer 驗證**：除 `initialize` 外，所有 `/mcp` 請求均須透過 HTTP Header `Authorization: Bearer <token>` 傳遞。未認證時回傳 `401 Unauthorized` 並附帶 `WWW-Authenticate: Bearer resource_metadata=".../.well-known/oauth-protected-resource"` 指引 AI Client 自動啟動 OAuth 探索。
 * **雙軌認證支援**：
   1. **OAuth 2.0 端點支援**：
-     - 提供 `/oauth/authorize`（別名 `/authorize`）與 `/oauth/token`（別名 `/token`），支援 Authorization Code + PKCE 流程，供支援標準 OAuth 的外部 AI Agent 透過彈出視窗完成登入。
+     - 提供 `/oauth/authorize`（別名 `/authorize`）、`/oauth/token`（別名 `/token`）、`/oauth/register`（別名 `/register`，OAuth 2.0 Dynamic Client Registration，RFC 7591），支援 Authorization Code + PKCE 流程與動態客戶端註冊，供支援標準 OAuth 的外部 AI Agent 透過彈出視窗完成登入。
      - **Open Redirect 防護**：`redirect_uri` 實施嚴格白名單校驗，目前開放：
        - 本機開發與 MCP 客戶端：`localhost` / `127.0.0.1`（HTTP/HTTPS，任意 port）
-       - 外部 AI Agent：`https://claude.ai/*`、`https://chatgpt.com/*`
+       - 外部 AI Agent：`https://claude.ai/*`、`https://chatgpt.com/*`、`https://gemini.google.com/*`、`https://aistudio.google.com/*`、`https://oauth-redirect.googleusercontent.com/*`（含 `oauth-redirect-sandbox`、`oauth-redirect-test`）。Google 域名僅允許上列精確主機，不使用 `*.google.com` / `*.googleusercontent.com` 萬用字元。
      - **授權碼單次使用 (One-time use) 防重放**：授權碼寫入資料庫 `oauth_authorization_codes` 表，兌換後立即標記失效。
   2. **Personal Access Token (PAT) / JWT 支援**：
      - 相容現有 JWT Token 格式（包含 `user_id`, `role`, `exp`），供終端配置（如 `claude_desktop_config.json`）直接使用。
@@ -59,7 +59,9 @@ AffecCare 後端（獨立部署於 `affeccare-api.sk5s.org`）將在 `/mcp` 端�
 
 ## 4. 權限與工具清單 (Tool Catalog)
 
-### A. HR 工具群 (`role: hr`)
+### A. HR／主管工具群（`role: hr`、`role: manager`）
+
+> **角色說明**：`hr` 與 `manager` 共用本工具群（對應 `ALL_TOOLS` 中 `roles: ['hr', 'manager']`），與 `employee` 工具群相互隔離。`admin` 等管理員角色擁有全部工具。未知角色（如 `staff`、`user`）fallback 為 `employee` 工具集。
 
 | 工具名稱 (`name`) | 職責與描述 | 底層對應 Service / Route |
 | :--- | :--- | :--- |
