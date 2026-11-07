@@ -68,7 +68,7 @@ AffecCare 後端（獨立部署於 `affeccare-api.sk5s.org`）將在 `/mcp` 端�
 | `hr_retrain_recommendation_model` | **訓練推薦模型**：重新從員工反應紀錄計算使用者特徵向量，並清除推薦快取。 | `app.services.vector_updater.rebuild_all_vectors` + `app.services.recommendation.invalidate_recommendation_model` |
 | `hr_get_model_training_status` | 查詢推薦模型狀態（最後訓練時間、反應總數、準確度、參與率）。 | `app.routes.hr_actions._format_relative_time` 與相關指標聚合 |
 | `hr_get_article_dimension_guide` | 取得文章三大推薦維度與對應分類標籤的說明。 | `app.services.mcp_tools.handle_hr_get_article_dimension_guide` |
-| `hr_get_macro_insights` | 取得部門層級宏觀身心健康洞察與壓力維度指標（去識別化/聚合）。 | `app.services.hr_dashboard` |
+| `hr_get_macro_insights` | 取得企業推薦統計，包含部門參與度、文章分類點擊趨勢與各分類推播/選擇分布（去識別化/聚合）。 | `app.services.hr_dashboard` |
 | `hr_list_articles` | 搜尋與分頁查詢系統中的所有文章與狀態。 | `app.services.cms.list_articles` |
 | `hr_get_article` | 取得單一文章完整內容、標籤與點擊成效統計。 | `app.services.cms.get_article` + `get_article_stats` |
 | `hr_create_article` | 建立新 EAP 文章（標題、內文、標籤、狀態 draft/published）。 | `app.services.cms.create_article` |
