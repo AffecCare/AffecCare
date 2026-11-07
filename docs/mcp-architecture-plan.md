@@ -9,7 +9,7 @@
 AffecCare 後端（獨立部署於 `affeccare-api.sk5s.org`）將在 `/mcp` 端點提供符合最新 MCP 規範的遠端服務，讓企業 HR 與一般員工能夠透過各類 AI Agent（例如 Claude Desktop、Cursor、企業專屬 Agent 等）安全地操作平台功能。
 
 ### 核心原則
-1. **無狀態 Streamable HTTP (Stateless)**：採用最新的單一 `POST /mcp` 端點，每個請求直接返回 `application/json`（JSON-RPC 2.0）。`GET /mcp` 作為探測／SSE 模式回傳 `200 OK` 與伺服器狀態元資料（`Accept: text/event-stream` 時發送 SSE `endpoint` 事件），避免 AI Agent 或反向代理探測時誤判為端點失效。不佔用持續長連線（探測模式），完美相容現有 Gunicorn 同步執行緒架構。
+1. **無狀態 Streamable HTTP (Stateless)**：採用最新的單一 `POST /mcp` 端點，每個請求直接返回 `application/json`（JSON-RPC 2.0）。`GET /mcp` 為 Stateless Streamable HTTP 回傳 `405 Method Not Allowed`（舊版 2024-11-05 SSE 的 `endpoint` 事件已移除；Gemini Web App / API / Enterprise 僅接受 `2025-03-26` 以上 Streamable HTTP）。探測資訊改由 `GET /` 與 `/health` 提供。不佔用持續長連線，完美相容現有 Gunicorn 同步執行緒架構。
 2. **零重複業務邏輯 (Adapter Pattern)**：MCP 層作為協定適配層，直接複用現有 `app/services/*`（CMS、推薦系統、收件匣、EAP 諮詢工單等）。
 3. **強制角色與資料邊界隔離 (Strict RBAC & ABAC)**：
    - HR 與員工具有完全隔離的工具集。
@@ -27,13 +27,13 @@ AffecCare 後端（獨立部署於 `affeccare-api.sk5s.org`）將在 `/mcp` 端�
   * `Authorization: Bearer <JWT_or_OAuth_Token>`
   * `Content-Type: application/json`
 * **支援的 JSON-RPC 2.0 方法**:
-  1. `initialize`: 協商協定版本與 capabilities（支援 tools）。
-  2. `notifications/initialized`: 客戶端確認初始化完成。
+  1. `initialize`: 協商協定版本（支援 `2025-11-25` / `2025-06-18` / `2025-03-26` / `2024-11-05`，預設 `2025-06-18`，Gemini 要求 >=`2025-03-26`）與 capabilities（支援 tools）。
+  2. `notifications/initialized`: 客戶端確認初始化完成（伺服器回 `202 Accepted`）。
   3. `ping`: 心跳檢測，回應 `{}`。
   4. `tools/list`: 依據呼叫者 Token 角色回傳可用工具清單與 JSON Schema。
   5. `tools/call`: 執行具體工具，驗證角色、解析參數並調用後端 Service。
 * **GET 請求行為**:
-  * `GET /mcp` 回傳 `200 OK` 與伺服器狀態元資料（`Accept: text/event-stream` 時以 SSE 發送 `endpoint` 事件），供探測與舊版 SSE 客戶端相容；主通道仍為無狀態 Streamable HTTP `POST /mcp`。
+  * `GET /mcp` 回傳 `405 Method Not Allowed`（Stateless Streamable HTTP；舊版 SSE `endpoint` 事件已移除）。主通道為 `POST /mcp`；探測資訊由 `GET /` 提供。
 * **自動探索端點 (OAuth 2.1 & MCP Discovery)**:
   1. `GET /.well-known/oauth-protected-resource`: RFC 9728 元資料，提供受保護端點 `/mcp` 對應之授權伺服器位址。
   2. `GET /.well-known/oauth-authorization-server`: RFC 8414 元資料，自動宣告 `authorization_endpoint` (`/oauth/authorize`)、`token_endpoint` (`/oauth/token`)、`registration_endpoint` (`/oauth/register`)，並宣告 `client_id_metadata_document_supported: true` 以原生相容 Claude 與 ChatGPT 的 CIMD (Client ID Metadata Document) 免手動註冊流程。
@@ -44,7 +44,7 @@ AffecCare 後端（獨立部署於 `affeccare-api.sk5s.org`）將在 `/mcp` 端�
 
 ## 3. 身分驗證機制 (Authentication)
 
-* **標準 Bearer 驗證**：除 `initialize` 外，所有 `/mcp` 請求均須透過 HTTP Header `Authorization: Bearer <token>` 傳遞。未認證時回傳 `401 Unauthorized` 並附帶 `WWW-Authenticate: Bearer resource_metadata=".../.well-known/oauth-protected-resource"` 指引 AI Client 自動啟動 OAuth 探索。
+* **標準 Bearer 驗證**：所有 `/mcp` 請求（含 `initialize`、`notifications/initialized`）均須透過 HTTP Header `Authorization: Bearer <token>` 傳遞。未認證時回傳 `401 Unauthorized` 並附帶 `WWW-Authenticate: Bearer resource_metadata=".../.well-known/oauth-protected-resource"` 指引 AI Client 自動啟動 OAuth 探索，避免客戶端誤判為已連線。
 * **雙軌認證支援**：
   1. **OAuth 2.0 端點支援**：
      - 提供 `/oauth/authorize`（別名 `/authorize`）、`/oauth/token`（別名 `/token`）、`/oauth/register`（別名 `/register`，OAuth 2.0 Dynamic Client Registration，RFC 7591），支援 Authorization Code + PKCE 流程與動態客戶端註冊，供支援標準 OAuth 的外部 AI Agent 透過彈出視窗完成登入。
@@ -67,6 +67,7 @@ AffecCare 後端（獨立部署於 `affeccare-api.sk5s.org`）將在 `/mcp` 端�
 | :--- | :--- | :--- |
 | `hr_retrain_recommendation_model` | **訓練推薦模型**：重新從員工反應紀錄計算使用者特徵向量，並清除推薦快取。 | `app.services.vector_updater.rebuild_all_vectors` + `app.services.recommendation.invalidate_recommendation_model` |
 | `hr_get_model_training_status` | 查詢推薦模型狀態（最後訓練時間、反應總數、準確度、參與率）。 | `app.routes.hr_actions._format_relative_time` 與相關指標聚合 |
+| `hr_get_article_dimension_guide` | 取得文章三大推薦維度與對應分類標籤的說明。 | `app.services.mcp_tools.handle_hr_get_article_dimension_guide` |
 | `hr_get_macro_insights` | 取得部門層級宏觀身心健康洞察與壓力維度指標（去識別化/聚合）。 | `app.services.hr_dashboard` |
 | `hr_list_articles` | 搜尋與分頁查詢系統中的所有文章與狀態。 | `app.services.cms.list_articles` |
 | `hr_get_article` | 取得單一文章完整內容、標籤與點擊成效統計。 | `app.services.cms.get_article` + `get_article_stats` |
